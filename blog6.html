@@ -1,0 +1,130 @@
+<!--Template Name: vacayhome
+File Name: single-blog.html
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/icons/favicon.png"/>
+        <title>MH&R Joias</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="fonts/antonio-exotic/stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        <link href="css/responsive.css" rel="stylesheet">
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
+        <script src="js/instafeed.min.js" type="text/javascript"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="page">
+            <!---header top---->
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                        </div>
+                        <div class="col-md-6"><div class="social-grid">
+                                <ul class="list-unstyled text-right">
+                                    <li><a><i class="fa fa-facebook"></i></a></li>
+                                    <li><a><i class="fa fa-twitter"></i></a></li>
+                                    <li><a><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div></div>
+                    </div>
+                </div>
+            </div>
+            <!--header--->
+            <div id="header-container"></div>
+            <script>
+                fetch('header.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('header-container').innerHTML = html;
+                    });
+            </script>
+
+            <!--end-->
+            <section class="image-head-wrapper" style="background-image: url('images/blog/OPODERTRANSFORMADORDASJOIAS.jpg');">
+                <div class="inner-wrapper">
+                    <h1>Notícias</h1>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+
+            <!--dinning-->
+            <section class="blog">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-9 col-sm-8 col-xs-12">
+
+                            <h3 style="text-align: center;">O Poder Transformador das Joias: <br> Mais do que Adornos, Tesouros de Significado</h3>
+
+                            <p class="blog-desc">
+                                Em nosso blog sobre joalherias, queremos explorar além do brilho e da beleza das joias. Vamos falar sobre o poder transformador que essas preciosidades possuem, indo muito além de meros adornos.
+                                <br><br>
+                                As joias têm o incrível poder de contar histórias. Cada peça carrega consigo uma narrativa única, seja uma herança de família passada de geração em geração, um presente especial marcando momentos inesquecíveis da vida ou até mesmo uma manifestação cultural de um povo ou região.
+                                <br><br>
+                                Elas são mais do que simples acessórios; são tesouros de significado. Um anel de noivado não é apenas um símbolo de compromisso, mas uma promessa de amor eterno. Um colar de pérolas pode representar elegância e sofisticação, transmitindo uma aura de glamour. E um par de brincos pode ser um amuleto de sorte, carregando consigo esperanças e desejos.
+                                <br><br>
+                                Além disso, as joias têm o poder de transformar quem as usa. Elas não apenas realçam a beleza física, mas também elevam a autoestima, conferindo confiança e empoderamento. Uma simples peça de joia pode mudar a forma como uma pessoa se vê e é vista pelo mundo, adicionando um toque de sofisticação e distinção ao seu estilo pessoal.
+                                <br><br>
+                                Portanto, ao escolher uma joia, não estamos apenas adquirindo um objeto material, mas também investindo em uma experiência emocional e cultural. Cada peça é uma expressão de identidade, uma conexão com o passado e uma promessa para o futuro. É por isso que as joias são verdadeiramente tesouros inestimáveis, capazes de transformar não apenas a aparência, mas também a alma daqueles que as possuem.
+                                <div class="clearfix"></div>
+                            </p>
+                            
+
+                        </div>
+                        <aside class="col-md-3 col-sm-4 col-xs-12">
+                            <div class="blog-list">
+                                <h4>Categorias</h4>
+                                <ul>
+                                    <li><a href="blog1.html"><i class="fa fa-caret-right"> </i>A essência do luxo</a></li>
+                                    <li><a href="blog2.html"><i class="fa fa-caret-right"> </i>Elegância e Sofisticação</a></li>
+                                    <li><a href="blog3.html"><i class="fa fa-caret-right"> </i>A Magia do Design</a></li>
+                                    <li><a href="blog4.html"><i class="fa fa-caret-right"> </i>História</a></li>
+                                    <li><a href="blog5.html"><i class="fa fa-caret-right"> </i>Explorando as Principais Marcas de Joias: Símbolos de Luxo e Elegância</a></li>
+                                    <li><a href="blog6.html"><i class="fa fa-caret-right"> </i>O Poder Transformador das Joias: Mais do que Adornos, Tesouros de Significado</a></li>
+                                </ul>
+
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="blog-list1">
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <!--end-->
+                        <!---footer--->
+                        <div id="footer-container"></div>
+                        <script>
+                            fetch('footer.html')
+                                .then(response => response.text())
+                                .then(html => {
+                                    document.getElementById('footer-container').innerHTML = html;
+                                });
+                        </script>
+
+            <!--back to top--->
+            <a style="display: none;" href="javascript:void(0);" class="scrollTop back-to-top" id="back-to-top">
+                <span><i aria-hidden="true" class="fa fa-angle-up fa-lg"></i></span>
+                <span>Top</span>
+            </a>
+
+        </div>
+    </body>
+</html>

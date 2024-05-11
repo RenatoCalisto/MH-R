@@ -1,0 +1,131 @@
+<!--Template Name: vacayhome
+File Name: single-blog.html
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/icons/favicon.png"/>
+        <title>MH&R Joias</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="fonts/antonio-exotic/stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        <link href="css/responsive.css" rel="stylesheet">
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
+        <script src="js/instafeed.min.js" type="text/javascript"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="page">
+            <!---header top---->
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                        </div>
+                        <div class="col-md-6"><div class="social-grid">
+                                <ul class="list-unstyled text-right">
+                                    <li><a><i class="fa fa-facebook"></i></a></li>
+                                    <li><a><i class="fa fa-twitter"></i></a></li>
+                                    <li><a><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div></div>
+                    </div>
+                </div>
+            </div>
+            <!--header--->
+            <div id="header-container"></div>
+            <script>
+                fetch('header.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('header-container').innerHTML = html;
+                    });
+            </script>
+
+            <!--end-->
+            <section class="image-head-wrapper" style="background-image: url('images/blog/historia.jpg');">
+                <div class="inner-wrapper">
+                    <h1>Notícias</h1>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+
+            <!--dinning-->
+            <section class="blog">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-9 col-sm-8 col-xs-12">
+
+                            <h3 style="text-align: center;">História</h3>
+
+                            <p class="blog-desc">
+                            No encantador mundo das joalherias, há uma riqueza de histórias a serem descobertas, uma herança que remonta aséculos atrás. As joias não são apenas adornos; são testemunhos da habilidade artesanal e da devoção aosdetalhes que perduram através do tempo.
+                            <br><br>
+                            Desde tempos antigos, as joias têm desempenhado papéis variados em diferentes culturas e sociedades. Elas foramusadas como símbolos de status, talismãs de proteção, amuletos da sorte e expressões de amor e devoção. Cadacultura contribuiu com suas próprias técnicas e tradições, dando origem a uma riqueza de estilos e designsúnicos.
+                            <br><br>
+                            O processo de criação de uma joia é verdadeiramente uma forma de arte. Dos ourives habilidosos dos antigosimpérios aos designers contemporâneos de hoje, o artesanato por trás das joias é uma mistura de habilidadetécnica e criatividade visionária. Cada peça é meticulosamente trabalhada à mão, com atenção aos detalhes e umcompromisso inabalável com a qualidade.
+                            <br><br>
+                            Além disso, as joias têm o poder de contar histórias. Elas são testemunhas silenciosas de momentos importantesna vida de uma pessoa - um anel de noivado que simboliza o início de uma jornada juntos, um colar de pérolas queé passado de mãe para filha como uma herança preciosa, ou um broche que evoca lembranças de uma ocasião especial.
+                            <br><br>
+                            Ao admirar uma peça de joia, estamos nos conectando não apenas com sua beleza física, mas também com suahistória e significado. É essa profundidade emocional que torna as joias tão especiais e tão valorizadas poraqueles que as possuem.
+                            <br><br>
+                            Portanto, da próxima vez que você segurar uma joia em suas mãos, lembre-se de que está segurando não apenas umadorno bonito, mas também uma peça de história viva. É uma conexão com o passado, um testemunho do presente euma promessa para o futuro.</p>
+
+                            <div class="clearfix"></div>
+
+                        </div>
+                        <aside class="col-md-3 col-sm-4 col-xs-12">
+                            <div class="blog-list">
+                                <h4>Categorias</h4>
+                                <ul>
+                                    <li><a href="blog1.html"><i class="fa fa-caret-right"> </i>A essência do luxo</a></li>
+                                    <li><a href="blog2.html"><i class="fa fa-caret-right"> </i>Elegância e Sofisticação</a></li>
+                                    <li><a href="blog3.html"><i class="fa fa-caret-right"> </i>A Magia do Design</a></li>
+                                    <li><a href="blog4.html"><i class="fa fa-caret-right"> </i>História</a></li>
+                                    <li><a href="blog5.html"><i class="fa fa-caret-right"> </i>Explorando as Principais Marcas de Joias: Símbolos de Luxo e Elegância</a></li>
+                                    <li><a href="blog6.html"><i class="fa fa-caret-right"> </i>O Poder Transformador das Joias: Mais do que Adornos, Tesouros de Significado</a></li>
+                                </ul>
+
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="blog-list1">
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <!--end-->
+                        <!---footer--->
+                        <div id="footer-container"></div>
+                        <script>
+                            fetch('footer.html')
+                                .then(response => response.text())
+                                .then(html => {
+                                    document.getElementById('footer-container').innerHTML = html;
+                                });
+                        </script>
+
+            <!--back to top--->
+            <a style="display: none;" href="javascript:void(0);" class="scrollTop back-to-top" id="back-to-top">
+                <span><i aria-hidden="true" class="fa fa-angle-up fa-lg"></i></span>
+                <span>Top</span>
+            </a>
+
+        </div>
+    </body>
+</html>

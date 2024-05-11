@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/icons/favicon.png"/>
+        <title>MH&R Joias</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="fonts/antonio-exotic/stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        <link href="css/responsive.css" rel="stylesheet">
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
+        <script src="js/instafeed.min.js" type="text/javascript"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="page">
+            <!---header top---->
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                        </div>
+                        <div class="col-md-6"><div class="social-grid">
+                                <ul class="list-unstyled text-right">
+                                    <li><a><i class="fa fa-facebook"></i></a></li>
+                                    <li><a><i class="fa fa-twitter"></i></a></li>
+                                    <li><a><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div></div>
+                    </div>
+                </div>
+            </div>
+            <!--header--->
+            <div id="header-container"></div>
+            <script>
+                fetch('header.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('header-container').innerHTML = html;
+                    });
+            </script>
+
+            <!--end-->
+            <section class="image-head-wrapper" style="background-image: url('images/blog/blog.jpg'); background-size: 100% auto;">
+                <div class="inner-wrapper">
+                    <h1 style="color: black;"></h1>
+                </div>
+            </section>
+            
+            <div class="clearfix"></div>
+
+            <!--notícias-->
+            <section class="blog">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-9 col-sm-8 col-xs-12">
+
+                            <h3 style="text-align: center;">Explore o Mundo da Joalheria</h3>
+
+                            <p class="blog-desc">Bem-vindo à nossa seção de notícias, onde você será envolvido pelas últimas tendências, designs deslumbrantes e histórias fascinantes do mundo da joalheria. De peças clássicas a criações inovadoras, de gemas preciosas a metais preciosos, estamos aqui para compartilhar tudo o que há de novo e emocionante no universo reluzente da joalheria.
+                                <br>
+                            
+                            </p>
+
+                            <div class="clearfix"></div>
+
+                        </div>
+                        <aside class="col-md-3 col-sm-4 col-xs-12">
+                            <div class="blog-list">
+                                <h4>Categorias</h4>
+                                <ul>
+                                    <li><a href="blog1.html"><i class="fa fa-caret-right"> </i>A essência do luxo</a></li>
+                                    <li><a href="blog2.html"><i class="fa fa-caret-right"> </i>Elegância e Sofisticação</a></li>
+                                    <li><a href="blog3.html"><i class="fa fa-caret-right"> </i>A Magia do Design</a></li>
+                                    <li><a href="blog4.html"><i class="fa fa-caret-right"> </i>História</a></li>
+                                    <li><a href="blog5.html"><i class="fa fa-caret-right"> </i>Explorando as Principais Marcas de Joias: Símbolos de Luxo e Elegância</a></li>
+                                    <li><a href="blog6.html"><i class="fa fa-caret-right"> </i>O Poder Transformador das Joias: Mais do que Adornos, Tesouros de Significado</a></li>
+                                </ul>
+
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="blog-list1">
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <!--end-->
+            <!---footer--->
+            <div id="footer-container"></div>
+            <script>
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('footer-container').innerHTML = html;
+                    });
+            </script>
+
+            <!--back to top--->
+            <a style="display: none;" href="javascript:void(0);" class="scrollTop back-to-top" id="back-to-top">
+                <span><i aria-hidden="true" class="fa fa-angle-up fa-lg"></i></span>
+                <span>Top</span>
+            </a>
+
+        </div>
+    </body>
+</html>

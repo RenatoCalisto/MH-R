@@ -1,0 +1,128 @@
+<!--Template Name: vacayhome
+File Name: single-blog.html
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/icons/favicon.png"/>
+        <title>MH&R Joias</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="fonts/antonio-exotic/stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        <link href="css/responsive.css" rel="stylesheet">
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
+        <script src="js/instafeed.min.js" type="text/javascript"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="page">
+            <!---header top---->
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                        </div>
+                        <div class="col-md-6"><div class="social-grid">
+                                <ul class="list-unstyled text-right">
+                                    <li><a><i class="fa fa-facebook"></i></a></li>
+                                    <li><a><i class="fa fa-twitter"></i></a></li>
+                                    <li><a><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div></div>
+                    </div>
+                </div>
+            </div>
+            <!--header--->
+            <div id="header-container"></div>
+            <script>
+                fetch('header.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('header-container').innerHTML = html;
+                    });
+            </script>
+
+            <!--end-->
+            <section class="image-head-wrapper" style="background-image: url('images/blog/amagiadodesign.jpg');">
+                <div class="inner-wrapper">
+                    <h1>Notícias</h1>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+
+            <!--dinning-->
+            <section class="blog">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-9 col-sm-8 col-xs-12">
+
+                            <h3 style="text-align: center;">A Magia do Design</h3>
+
+                            <p class="blog-desc">No universo das joalherias, a magia do design é um elemento que transcende o mero aspecto estético. Cada peça é uma obra-prima meticulosamente criada, onde a criatividade se une à habilidade artesanal para dar vida a verdadeiras obras de arte. Desde os tempos antigos até os dias atuais, o design das joias tem sido uma expressão da cultura, da história e da individualidade.
+                            <br><br>
+                            O que torna o design das joias tão especial é a sua capacidade de contar histórias. Cada curva, cada detalhe,tem o poder de evocar emoções e despertar memórias. Um simples pingente pode nos transportar para um momentoespecial em nossas vidas, enquanto um par de brincos pode nos lembrar de uma pessoa querida.
+                            <br><br>
+                            Além disso, o design das joias também é uma forma de expressão pessoal. Os designers têm a liberdade de exploraruma ampla gama de estilos, desde o clássico e atemporal até o contemporâneo e ousado. Cada peça reflete nãoapenas o talento do designer, mas também a personalidade e o gosto do usuário.
+                            <br><br>
+                            Mas o verdadeiro encanto do design das joias está na sua capacidade de nos transportar para um mundo de beleza efantasia. Ao usar uma joia, não apenas adornamos nosso corpo, mas também nos conectamos a algo maior - a umatradição de luxo e elegância que perdura há séculos.
+                            <br><br>
+                            Portanto, da próxima vez que você admirar uma bela peça de joia, lembre-se do poder do design por trás dela. Éuma forma de arte que nos inspira, nos emociona e nos conecta com o mundo ao nosso redor. E é isso que torna asjoias verdadeiramente mágicas.</p>
+
+                            <div class="clearfix"></div>
+
+                        </div>
+                        <aside class="col-md-3 col-sm-4 col-xs-12">
+                            <div class="blog-list">
+                                <h4>Categorias</h4>
+                                <ul>
+                                    <li><a href="blog1.html"><i class="fa fa-caret-right"> </i>A essência do luxo</a></li>
+                                    <li><a href="blog2.html"><i class="fa fa-caret-right"> </i>Elegância e Sofisticação</a></li>
+                                    <li><a href="blog3.html"><i class="fa fa-caret-right"> </i>A Magia do Design</a></li>
+                                    <li><a href="blog4.html"><i class="fa fa-caret-right"> </i>História</a></li>
+                                    <li><a href="blog5.html"><i class="fa fa-caret-right"> </i>Explorando as Principais Marcas de Joias: Símbolos de Luxo e Elegância</a></li>
+                                    <li><a href="blog6.html"><i class="fa fa-caret-right"> </i>O Poder Transformador das Joias: Mais do que Adornos, Tesouros de Significado</a></li>
+                                </ul>
+
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="blog-list1">
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <!--end-->
+                        <!---footer--->
+                        <div id="footer-container"></div>
+                        <script>
+                            fetch('footer.html')
+                                .then(response => response.text())
+                                .then(html => {
+                                    document.getElementById('footer-container').innerHTML = html;
+                                });
+                        </script>
+
+            <!--back to top--->
+            <a style="display: none;" href="javascript:void(0);" class="scrollTop back-to-top" id="back-to-top">
+                <span><i aria-hidden="true" class="fa fa-angle-up fa-lg"></i></span>
+                <span>Top</span>
+            </a>
+
+        </div>
+    </body>
+</html>

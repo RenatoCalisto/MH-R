@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/icons/favicon.png"/>
+        <title>MH&R Joias</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="fonts/antonio-exotic/stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        <link href="css/responsive.css" rel="stylesheet">
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
+        <script src="js/instafeed.min.js" type="text/javascript"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="page">
+            <!---header top---->
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                        </div>
+                        <div class="col-md-6"><div class="social-grid">
+                                <ul class="list-unstyled text-right">
+                                    <li><a><i class="fa fa-facebook"></i></a></li>
+                                    <li><a><i class="fa fa-twitter"></i></a></li>
+                                    <li><a><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div></div>
+                    </div>
+                </div>
+            </div>
+            <!--header--->
+            <div id="header-container"></div>
+                <script>
+                    fetch('header.html')
+                        .then(response => response.text())
+                        .then(html => {
+                            document.getElementById('header-container').innerHTML = html;
+                        });
+                </script>
+
+
+
+            <!--end-->
+            <section class="image-head-wrapper" style="background-image: url('images/sobre.jpg');">
+                <div class="inner-wrapper">
+                    <h1>About us</h1>
+                </div>
+            </section>
+            <div class="clearfix"></div>
+
+
+            <section class="about-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 about-left">
+                            <p>Joias <label>MH&R</label> <span></span></p>
+                        </div>
+                        <div class="col-md-7 about-right">
+                            <h3>Elevando a Elegância das Joias com Estilo e Qualidade</h3>
+                            <p>Bem-vindo à nossa loja de joias, onde a beleza é eterna e o estilo é atemporal. Somos uma boutique dedicada a oferecer peças exclusivas que capturam a essência da elegância e do requinte.
+                                <br>
+                                <br>
+                                Nossa paixão pelo brilho das joias nos leva a buscar as mais deslumbrantes peças, cada uma selecionada por sua qualidade excepcional e design impressionante. Cada item em nossa coleção é cuidadosamente escolhido para refletir os mais altos padrões de luxo e sofisticação.
+                                <br>
+                                <br>
+                                Aqui, você encontrará uma variedade de estilos que vão desde os clássicos tradicionais até as criações mais modernas e arrojadas. Cada peça é uma obra-prima em si mesma, destinada a adicionar um toque de glamour e elegância a qualquer ocasião.
+                                <br>
+                                <br>
+                                Além de oferecer uma coleção impressionante de joias, estamos comprometidos em fornecer um serviço excepcional que atenda às suas necessidades e exceda suas expectativas. Nossa equipe está aqui para ajudá-lo a encontrar a peça perfeita que complementará seu estilo pessoal e destacará sua beleza única.
+                                <br>
+                                <br>
+                                Venha nos visitar e descubra como podemos ajudá-lo a encontrar a joia dos seus sonhos. Na nossa loja, a beleza é mais do que um acessório - é uma expressão de estilo e personalidade. Estamos ansiosos para ajudá-lo a encontrar a peça perfeita que o fará brilhar em todas as ocasiões.</p>
+                                <br>
+                                <br>
+                                <p>Nossos Compromissos:</p>
+                            <ul class="list-unstyled list-inline">
+                                <li>Oferecer peças originais exclusivas de alta qualidade.</li>
+                                <li>Proporcionar um ambiente de compras luxuoso e acolhedor.</li>
+                                <li>Garantir um atendimento excepcional e personalizado a cada cliente.</li>
+                                <li>Manter os mais altos padrões de ética e transparência em todos os aspectos do nosso negócio.</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <span>Consultoria de estilo e seleção de peças personalizadas.</span>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </section>
+
+
+            <!---footer--->
+            <div id="footer-container"></div>
+            <script>
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('footer-container').innerHTML = html;
+                    });
+            </script>
+
+            <!--back to top--->
+            <a style="display: none;" href="javascript:void(0);" class="scrollTop back-to-top" id="back-to-top">
+                <span><i aria-hidden="true" class="fa fa-angle-up fa-lg"></i></span>
+                <span>Top</span>
+            </a>
+
+        </div>
+    </body>
+</html>
